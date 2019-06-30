@@ -1,6 +1,5 @@
 # This version can is designed to parse Nessus v8 log files.
 # For earlier versions of Nessus use v7 of the script.
-# Note: I have not tested v7 version of the script on earlier versions of Nessus prior to v7 ( ie.. v6 ).
 
 import re,sys,getopt
 
