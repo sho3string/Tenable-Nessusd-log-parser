@@ -1,4 +1,4 @@
-# This version can is designed to parse Nessus v8 log files.
+# This version is designed to parse Nessus v8 log files.
 # For earlier versions of Nessus use v7 of the script.
 
 import re,sys,getopt
