@@ -1,5 +1,8 @@
-# This version is designed to parse Nessus v8 log files.
+# This version is designed to parse Nessus v8 log files ( nessusd.messages )
 # For earlier versions of Nessus use v7 of the script.
+# Run scriptv8.py on it's own to display usage.=
+# Valid job UUIDs are displayed if no argument input. Valid argument is the job_uuid
+
 
 import re,sys,getopt
 
