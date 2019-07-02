@@ -3,6 +3,39 @@
 # Run scriptv8.py on it's own to display usage.=
 # Valid job UUIDs are displayed if no argument input. Valid argument is the job_uuid
 
+# Displays results in descending order based on how long the plugin ran for.
+
+
+# Example output.
+# ---------------
+# python scriptv8.py
+# Valid jobs
+#
+# Record [scan=46507114-3ae6-179f-01f4-fe2a7ee9fe803dc3ce9a9da56995]
+# Record [scan=61a23661-fbef-e507-8dc7-13a4636cf495c5135e439f346cba]
+# Usage: scriptv8.py JOB_UUID
+#
+#
+#
+# scriptv8.py 46507114-3ae6-179f-01f4-fe2a7ee9fe803dc3ce9a9da56995
+# [Fri Mar 29 11:53:35 2019][4880.0][scan=46507114-3ae6-179f-01f4-fe2a7ee9fe803dc3ce9a9da56995][target=192.168.60.128][duration=107.09s] : Finished
+
+# [Fri Mar 29 11:57:31 2019][4880.0][scan=46507114-3ae6-179f-01f4-fe2a7ee9fe803dc3ce9a9da56995][target=172.26.84.155][duration=343.19s] : Finished
+
+# [Fri Mar 29 11:57:32 2019][4880.0][scan=46507114-3ae6-179f-01f4-fe2a7ee9fe803dc3ce9a9da56995][duration=344.00s] : Finished: 2 of 2 hosts up, 0 unscanned, 0 rejected, 0 dead, 0 timeout, 0 aborted
+
+# Plugin: find_service.nasl ran in 80.05 seconds for target=172.26.84.155
+# Plugin: no404.nasl ran in 63.93 seconds for target=172.26.84.155
+# Plugin: ssl_supported_versions.nasl ran in 57.60 seconds for target=172.26.84.155
+# Plugin: os_fingerprint_html.nasl ran in 49.07 seconds for target=172.26.84.155
+# Plugin: ike2_detect.nasl ran in 36.00 seconds for target=192.168.60.128
+# Plugin: ssh_get_info2.nasl ran in 33.03 seconds for target=192.168.60.128
+# Plugin: traceroute.nasl ran in 32.06 seconds for target=172.26.84.155
+# Plugin: scada_profinet_network_detect.nbin ran in 30.00 seconds for target=172.26.84.155
+# Plugin: ssh_rate_limiting.nasl ran in 22.04 seconds for target=172.26.84.155
+# ....
+
+
 
 import re,sys,getopt
 
