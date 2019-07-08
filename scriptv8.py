@@ -1,6 +1,8 @@
+# Determines which plugins contribute to long running scan times.
+
 # This version is designed to parse Nessus v8 log files ( nessusd.messages )
 # For earlier versions of Nessus use v7 of the script.
-# Run scriptv8.py on it's own to display usage.=
+# Run scriptv8.py on it's own to display the usage.
 # Valid job UUIDs are displayed if arguments are blank. Valid argument is the job_uuid
 
 # Displays results in descending order based on how long the plugin ran for.
